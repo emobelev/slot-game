@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #e62222;
+  --color-light-primary: #fdf2e9;
+  --color-medium-primary: #fae5d3;
+  --color-dark-primary: #cf1f1f;
+  --color-mid-grey: #555;
+
+  --font-primary: 'Rubik', sans-serif;
+  --font-weight-default: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1;
+  font-weight: var(--font-weight-default);
+  color: var(--color-mid-grey);
+  overflow-x: hidden;
+}
+
+.app {
+  display: grid;
+  row-gap: 2.6rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.balance-start-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
+  width: 500px;
+}
+.balance {
+  font-size: 1.5rem;
+  display: grid;
+}
+.balance span {
+  font-size: 3rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+.start-button,
+.start-button:link,
+.start-button:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: solid 1px transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.start-button:hover,
+.start-button:active {
+  box-shadow: none;
+  background-color: var(--color-dark-primary);
+}
